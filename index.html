@@ -12,8 +12,9 @@
 
     <!-- Стили основы и header-а -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- hero секция -->
+    <!-- Секций -->
     <link rel="stylesheet" href="assets/css/hero-style.css">
+    <link rel="stylesheet" href="assets/css/products-style.css">
 </head>
 <body>
 
@@ -63,7 +64,8 @@
     <main class="main">
         <section class="hero">
             <div class="container">
-
+                
+                <!-- HERO ====================================================================== -->
                 <div class="hero__main">
                     <div class="hero__content">
                         <p class="hero__subtitle">How Businesses Stay Compliant.</p>
@@ -93,6 +95,200 @@
                     </div>
                 </div>
                 
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+
+                <!-- PRODUCTS ====================================================================== -->
+                <div class="products__header">
+                    <p class="products__subtitle">Product Suite</p>
+                    <h2 class="products__title">The All In One Financial Platform for Founders like You.</h2>
+                    <p class="products__description">Form, Manage, Track & Automate your business without any hassle.</p>
+                </div>
+            
+                <div class="products__nav-wrapper">
+                    <ul class="products__tabs">
+                        <li class="products__tab" data-tab="tab-box">Business-in-a-Box™</li>
+                        <li class="products__tab is-active" data-tab="tab-formation">Formation</li>
+                        <li class="products__tab" data-tab="tab-bookkeeping">Bookkeeping</li>
+                        <li class="products__tab" data-tab="tab-taxes">Taxes</li>
+                        <li class="products__tab" data-tab="tab-analytics">Analytics</li>
+                    </ul>
+
+                    <div class="products__actions">
+                        <a href="#" class="btn btn--black">Create a Free Account <span class="btn__arrow">›</span></a>
+                        <a href="#" class="btn btn--gray">Book a Demo</a>
+                    </div>
+                </div>
+            
+                <div class="products__content">
+
+                    <!-- CARD-1 -->
+                    <div class="products__panel is-active" id="tab-formation">
+                        <div class="products__grid">
+                            <div class="card card--large card--yellow">
+                                <p class="card__tag">Formation Filings</p>
+                                <h3 class="card__title">Stay Legally Compliant with Expert Formation Filings.</h3>
+                                <p class="card__text">We handle the paperwork, filings, and compliance so you can focus on your vision.</p>
+                                <div class="card__image-placeholder">Тут будет картинка Company</div>
+                            </div>
+                        
+                            <div class="products__grid-col">
+                                <div class="card card--small card--yellow">
+                                    <p class="card__tag">EIN</p>
+                                    <h3 class="card__title">Employer Identification Number Made Easy.</h3>
+                                    <p class="card__text">Get your Employer Identification Number without hassle.</p>
+                                    <div class="card__image-placeholder card__image-placeholder--small">Картинка EIN</div>
+                                </div>
+                                <div class="card card--small card--white-bordered">
+                                    <p class="card__tag">Operating Agreement</p>
+                                    <h3 class="card__title">Protect Your LLC With an Operating Agreement.</h3>
+                                </div>
+                            </div>
+                        
+                            <div class="card card--large card--yellow">
+                                <p class="card__tag">Registered Agent Services</p>
+                                <h3 class="card__title">Trusted Registered Agent Services for Your Business.</h3>
+                                <p class="card__text">We receive your important government documents, so you don't miss a thing.</p>
+                                <div class="card__image-placeholder">Картинка рукопожатия</div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                
+                    <!-- CARD-2 -->
+                    <div class="products__panel" id="tab-box">
+                        <div class="box-grid-top">
+    
+                            <div class="card card--yellow">
+                                <p class="card__tag">🚀 Formation</p>
+                                <h3 class="card__title">Form Your Business in the U.S From Anywhere.</h3>
+                                <a href="#" class="card__link">Start Your Business ›</a>
+                                <div class="card__image-placeholder">Тут картинка Company</div>
+                            </div>
+                        
+                            <div class="card card--blue">
+                                <p class="card__tag">📊 Bookkeeping</p>
+                                <h3 class="card__title">Easy Bookkeeping for Your Finances.</h3>
+                                <a href="#" class="card__link">Track Your Finances ›</a>
+                                <div class="card__image-placeholder">Тут картинка Transactions</div>
+                            </div>
+                        
+                            <div class="card card--green">
+                                <p class="card__tag">📉 Taxes</p>
+                                <h3 class="card__title">Worry Free Tax Filings using doola Dashboard.</h3>
+                                <a href="#" class="card__link">File Your Taxes ›</a>
+                                <div class="card__image-placeholder">Тут картинка Taxes</div>
+                            </div>
+                        
+                        </div>
+
+                        <div class="box-grid-bottom">
+
+                            <div class="card card--cyan card--horizontal">
+                                <div class="card__content">
+                                    <p class="card__tag">🤖 AI Toolkit</p>
+                                    <h3 class="card__title">Your Smartest AI Business Partner.</h3>
+                                    <a href="#" class="card__link">Try AI Co-Founder ›</a>
+                                </div>
+                                <div class="card__image-placeholder">Тут картинка AI Chat</div>
+                            </div>
+                        
+                            <div class="card card--pink card--horizontal">
+                                <div class="card__content">
+                                    <p class="card__tag">📈 Analytics</p>
+                                    <h3 class="card__title">Powerful Business Insights Made Simple.</h3>
+                                    <a href="#" class="card__link">Analyze Your Sales ›</a>
+                                </div>
+                                <div class="card__image-placeholder">Тут картинка Графиков</div>
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                    <!-- CARD-3 -->
+                    <div class="products__panel" id="tab-bookkeeping">
+                        <div class="products__grid products__grid--2-col">
+    
+                            <div class="card card--large card--blue">
+                                <p class="card__tag">Track Your Transactions</p>
+                                <h3 class="card__title">Track, Categorize, and Monitor All Your Financial Transactions in One Place.</h3>
+                                <p class="card__text">Stay up to date with real-time insights and keep your records clean. Never miss a transaction.</p>
+                                <div class="card__image-placeholder">Тут будет интерфейс Transactions</div>
+                            </div>
+                        
+                            <div class="products__grid-col">
+
+                                <div class="card card--white-blue-border">
+                                    <p class="card__tag">Send Invoices</p>
+                                    <h3 class="card__title">Save Time and Impress Clients by Sending Professional Invoices in Seconds.</h3>
+                                </div>
+                            
+                                <div class="card card--blue card--flex-grow">
+                                    <p class="card__tag">Dedicated Bookkeeper</p>
+                                    <h3 class="card__title">A Dedicated Bookkeeper Who Knows Your Business.</h3>
+                                    <p class="card__text">Say goodbye to late nights with spreadsheets. With expert bookkeeping support, you'll always know where your money stands.</p>
+                                    <div class="card__image-placeholder card__image-placeholder--right">Тут картинка Бухгалтера</div>
+                                </div>
+                            
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <!-- CARD-4 -->
+                    <div class="products__panel" id="tab-taxes">
+                        <div class="products__grid products__grid--2-col">
+
+                            <div class="card card--large card--green">
+                                <p class="card__tag">Annual State Tax Filings</p>
+                                <h3 class="card__title">Stay Compliant with Hassle-Free Annual State Tax Filings.</h3>
+                                <p class="card__text">We handle your yearly state tax filings on time and with accuracy, so you can avoid penalties and focus on running your business.</p>
+                                <div class="card__image-placeholder">Тут будет интерфейс Taxes Dashboard</div>
+                            </div>
+                        
+                            <div class="products__grid-col">
+
+                                <div class="card card--green card--flex-grow">
+                                    <p class="card__tag">Business IRS Tax Filings</p>
+                                    <h3 class="card__title">Accurate & On-Time Business IRS Tax Filings.</h3>
+                                    <p class="card__text">Never worry about penalties or missed deadlines— doola manages your filings end-to-end with accuracy and ease.</p>
+                                    <div class="card__image-placeholder card__image-placeholder--right">Тут картинка Налогов/Графиков</div>
+                                </div>
+                            
+                                <div class="card card--white-green-border">
+                                    <p class="card__tag">Licensed Tax Professional Consultation</p>
+                                    <h3 class="card__title">Personalized CPA Experts to Navigate Your Taxes.</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <!-- CARD-5 -->
+                    <div class="products__panel" id="tab-analytics">
+                        <div class="products__grid products__grid--2-col">
+    
+                            <div class="card card--large card--pink">
+                                <p class="card__tag">E-Commerce Analytics</p>
+                                <h3 class="card__title">Powerful E-Commerce Analytics Designed for Smarter Business Decisions.</h3>
+                                <p class="card__text">Get detailed insights into every transaction, campaign, and customer interaction to fuel smarter decisions.</p>
+                                <div class="card__image-placeholder">Тут будет интерфейс Orders</div>
+                            </div>
+                        
+                            <div class="card card--large card--pink">
+                                <div class="card__image-placeholder card__image-placeholder--top">Тут будет интерфейс Ad Campaigns</div>
+                                <p class="card__tag">Track Ads Campaign</p>
+                                <h3 class="card__title">Track Your Ad Campaigns for Complete Performance Visibility.</h3>
+                                <p class="card__text">Gain real-time insights into campaign reach, engagement, and sales impact to maximize growth.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                
+                </div>
             </div>
         </section>
     </main>

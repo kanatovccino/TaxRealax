@@ -1,5 +1,4 @@
 //  HEADER ======================================================================
-
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('.header');
     let isTicking = false;
@@ -20,5 +19,25 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             isTicking = true;
         }
+    });
+});
+
+//  PRODUCTS ======================================================================
+// Логика переключения табов в Product Suite
+const tabs = document.querySelectorAll('.products__tab');
+const panels = document.querySelectorAll('.products__panel');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        // Убираем активный класс у всех табов и панелей
+        tabs.forEach(t => t.classList.remove('is-active'));
+        panels.forEach(p => p.classList.remove('is-active'));
+
+        // Добавляем активный класс нажатому табу
+        tab.classList.add('is-active');
+
+        // Ищем панель с ID, который записан в data-tab нажатой кнопки, и показываем её
+        const targetPanelId = tab.getAttribute('data-tab');
+        document.getElementById(targetPanelId).classList.add('is-active');
     });
 });
