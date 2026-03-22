@@ -27,12 +27,24 @@ body {
 .container {
     max-width: 1224px;
     margin: 0 auto;
-    padding: 16px 0px;
+    padding: 8px 0px;
 }
 
-/* 2. Шапка (Header) */
 .header {
     background-color: var(--color-bg);
+    position: sticky;
+    top: 0;
+    padding-top: 30px;
+    z-index: 1000;
+    transition: 300ms;
+}
+
+/* Новый класс, который будет вешаться через JS при скролле */
+.header.is-scrolled {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    background-color: var(--color-bg);
+    padding-top: 0px;
+    transition: 300ms;
 }
 
 /* Основная панель навигации */
