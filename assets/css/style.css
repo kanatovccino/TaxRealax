@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/Inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+}
+
+/* 1. Общие сбросы и переменные */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg: #FEF4CC; /* Тот самый кремовый из doola */
+    --color-dark: #000;
+    --font-main: 'Inter', -apple-system, sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: #fff; /* Фон контента белый */
+}
+
+.container {
+    max-width: 1224px;
+    margin: 0 auto;
+    padding: 16px 0px;
+}
+
+/* 2. Шапка (Header) */
+.header {
+    background-color: var(--color-bg);
+}
+
+/* Основная панель навигации */
+.header__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-size: 32px;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--color-dark);
+    letter-spacing: -1.5px;
+    margin-right: 40px;
+}
+
+.header__logo img {
+    width: 160px;    
+}
+
+/* Меню */
+.nav__list {
+    display: flex;
+    list-style: none;
+    /* gap: 32px; */
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    /* gap: 4px; */
+}
+
+.nav__item {
+    margin-right: 40px;
+}
+
+.nav__item:last-child {
+    margin-right: 0;
+}
+
+/* Правый блок (Questions + Button) */
+.header__right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header__questions {
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.btn--primary {
+    background: #fff;
+    color: var(--color-dark);
+    padding: 14px 28px;
+    border-radius: 50px; /* Круглая кнопка */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: 0.2s ease;
+}
+
+.btn--primary:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
