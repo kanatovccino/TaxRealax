@@ -1,0 +1,166 @@
+/* --- СЕКЦИЯ HERO --- */
+.hero {
+    background-color: var(--color-bg); /* Тот же кремовый фон */
+    padding: 60px 0 80px;
+}
+
+.hero__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* Левая колонка - Контент */
+.hero__content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.hero__subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4A4A4A;
+    margin-bottom: 16px;
+}
+
+.hero__title {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--color-dark);
+    margin-bottom: 24px;
+    letter-spacing: -1.5px;
+}
+
+.hero__title-highlight {
+    color: #A07D23; /* Горчичный цвет из оригинала */
+}
+
+.hero__description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 40px;
+    max-width: 480px;
+}
+
+/* Кнопка и приписка */
+.hero__action {
+    margin-bottom: 30px;
+}
+
+.btn--black {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--color-dark);
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.btn--black:hover {
+    transform: translateY(-2px);
+}
+
+.btn__arrow {
+    margin-left: 8px;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.hero__note {
+    font-size: 13px;
+    color: #666;
+    margin-top: 12px;
+}
+
+/* Блок Trustpilot */
+.hero__trust {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.hero__trust-stars {
+    color: #00B67A; /* Фирменный зеленый Trustpilot */
+    letter-spacing: 2px;
+}
+
+/* Правая колонка - Картинка-заглушка */
+.hero__image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero__placeholder {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    background-color: #E0E0E0;
+    border-radius: 24px;
+}
+
+/* Плашка Backed By The Best */
+.hero__logos {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__logos-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.hero__logos-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero__logos-item {
+    font-size: 24px;
+    font-weight: 800;
+    color: #A0A0A0; /* Серый текст для заглушек */
+    letter-spacing: -1px;
+}
+
+/* Базовый адаптив для планшетов и телефонов */
+@media (max-width: 991px) {
+    .hero__main {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero__content {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero__image-wrapper {
+        justify-content: center;
+        width: 100%;
+    }
+    .hero__logos {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .hero__logos-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

@@ -75,10 +75,87 @@ body {
 
 .nav__item {
     margin-right: 40px;
+    position: relative;
+    display: inline-block;
 }
 
 .nav__item:last-child {
     margin-right: 0;
+}
+
+.nav__item img  {
+    width: 22px;
+    height: 22px;
+    padding: 6px;
+}
+
+/* Состояние по умолчанию */
+.arrow {
+    width: 12px; /* подбери нужный размер */
+    height: 12px;
+    margin-left: 6px;
+    transition: transform 0.3s ease; /* Плавность анимации */
+}
+
+/* Анимация при наведении на родителя (nav__item) */
+.nav__item:hover .arrow {
+    transform: rotate(-180deg); /* Поворот на 180 градусов против часовой стрелки */
+}
+
+/* Скрываем меню по умолчанию */
+.dropdown-menu {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    top: 100%; /* Вешаем прямо под ссылкой */
+    left: 0;
+    background: #fff;
+    min-width: 246px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 0px;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -20px; /* Высота должна быть равна или чуть больше отступа от ссылки */
+    left: 0;
+    width: 100%;
+    height: 20px; /* Создаем невидимую зону */
+    display: block;
+}
+
+/* Показываем при наведении на nav-item */
+.nav__item:hover .dropdown-menu {
+    display: flex;
+}
+
+/* Стили для пунктов внутри меню */
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    border-radius: 0 8px 8px 0;
+    transition: background 0.3s;
+    transition: all 0.2s ease; /* Плавный переход для цвета и фона */
+    border-left: 4px solid transparent;
+}
+
+.dropdown-item:hover {
+  background: #fcfcfc;
+  color: #be6f1a;
+  border-left: 4px solid #FA9022;
+}
+
+.icon {
+  margin-right: 12px;
+  font-size: 1.2em;
 }
 
 /* Правый блок (Questions + Button) */
@@ -108,4 +185,7 @@ body {
 
 .btn--primary:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #FA9022;
+    color: #fff;
+    transition: 0.2s ease;
 }

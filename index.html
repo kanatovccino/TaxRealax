@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaxRelax | Home</title>
     
+    <!-- Иконки -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- Стили основы и header-а -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- hero секция -->
+    <link rel="stylesheet" href="assets/css/hero-style.css">
 </head>
 <body>
 
     <!-- HEADER ====================================================================== -->
-    
     <header class="header">
         <div class="container">
             <div class="header__main">
@@ -19,9 +25,29 @@
 
                 <nav class="header__nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">Products</a></li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Products<img src="assets/images/logo/angle-down.svg" class="arrow" alt="arrow"></a>
+                            <div class="dropdown-menu">
+                                <a href="products.html" class="dropdown-item">
+                                    <span class="icon fa-solid fa-rocket"></span>Formation</a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="icon fa-regular fa-circle-user"></span> AI Junior Accounting</a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="icon fa-solid fa-building-columns"></span> AI KYC & AML</a>
+                            </div>
+                        </li>
                         <li class="nav__item"><a href="#" class="nav__link">Partner with Us</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Resources</a></li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Resources<img src="assets/images/logo/angle-down.svg" class="arrow" alt="arrow"></a>
+                            <div class="dropdown-menu">
+                                <a href="products.html" class="dropdown-item">
+                                    <span class="icon fa-regular fa-comment"></span>Blog</a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="icon fa-solid fa-circle-nodes"></span>Integration</a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="icon fa-solid fa-users"></span>About Us</a>
+                            </div>
+                        </li>
                         <li class="nav__item"><a href="pricing.html" class="nav__link">Pricing</a></li>
                     </ul>
                 </nav>
@@ -35,7 +61,9 @@
     </header>
 
     <main class="main">
-        
+        <section class="hero">
+            
+        </section>
     </main>
 
     <footer class="footer">
