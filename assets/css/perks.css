@@ -1,0 +1,130 @@
+/* --- СЕКЦИЯ PERKS --- */
+.perks {
+    padding: 100px 0;
+    background-color: #F9F9F9; /* Светлый фон из оригинала */
+}
+
+.perks__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* Контент слева */
+.perks .section__header {
+    max-width: 42%;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.section__subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: #A07D23;
+}
+
+.section__subtitle-logo {
+    position: relative;
+    top: 10px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.perks .section__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    margin-bottom: 12px;
+}
+
+.perks .section__description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 26px;
+}
+
+.perks .btn--black {
+    display: inline-block;
+    padding: 12px 6px 12px 6px;
+}
+
+/* Сетка карточек справа */
+.perks__grid {
+    flex: 1;
+    display: grid;
+    /* Настройки сетки: 2 колонки */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px; /* Отступы между карточками */
+}
+
+/* Сама карточка партнера */
+.perk-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.perk-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-color: #EEE;
+}
+
+/* Место под иконку */
+.perk-card__icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: #F5F5F5; /* Заглушка, пока нет SVG */
+    border-radius: 8px;
+}
+
+.perk-card__icon svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Текст в карточке */
+.perk-card__name {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin: 0;
+}
+
+.perk-card__category {
+    font-size: 13px;
+    color: #999;
+    margin: 2px 0 0 0;
+}
+
+/* Адаптив */
+@media (max-width: 1024px) {
+    .perks__wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .perks__content {
+        flex: 1;
+        max-width: 600px;
+        margin-bottom: 40px;
+    }
+    .perk-card {
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .perks__grid {
+        grid-template-columns: 1fr;
+    }
+}
