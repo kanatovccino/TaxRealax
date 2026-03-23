@@ -1,0 +1,126 @@
+/* --- СЕКЦИЯ RESOURCES --- */
+
+/* Центрируем заголовки, если в базе этого еще нет */
+.section__header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+/* Сетка для карточек */
+.resources__grid {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+/* Базовая карточка */
+.resource-card {
+    position: relative;
+    width: 460px;
+    height: 600px;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Эффект: карточка увеличивается */
+.resource-card:hover {
+    transform: scale(1.01) translateY(-4px);
+}
+
+/* Слой с фоновой картинкой */
+.resource-card__bg {
+    position: absolute;
+    inset: -20px; /* Делаем запас по краям, чтобы при сжатии не было щелей */
+    background-color: #e0e0e0;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.05); /* Изначально увеличена */
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 1;
+}
+
+/* Эффект: картинка уменьшается */
+.resource-card:hover .resource-card__bg {
+    transform: scale(1);
+}
+
+/* Градиент поверх картинки (Внутренняя тень) */
+.resource-card__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+/* Контент карточки */
+.resource-card__content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+}
+
+.resource-card__title {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.resource-card__text {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+/* --- Модификаторы для Желтой карточки --- */
+.resource-card--yellow .resource-card__overlay {
+    /* Желтый градиент, цвет подгонишь пипеткой */
+    background: linear-gradient(to top, #FCE38A 0%, rgba(252, 227, 138, 0) 60%);
+}
+.resource-card--yellow .resource-card__title,
+.resource-card--yellow .resource-card__text {
+    color: var(--color-dark);
+}
+
+/* --- Модификаторы для Черной карточки --- */
+.resource-card--black .resource-card__overlay {
+    /* Черный градиент */
+    background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0) 60%);
+}
+.resource-card--black .resource-card__title,
+.resource-card--black .resource-card__text {
+    color: #ffffff;
+}
+
+/* Белая кнопка */
+.btn--white {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: var(--color-dark);
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+.btn--white:hover {
+    transform: translateY(-2px);
+}
+
+/* Адаптив */
+@media (max-width: 991px) {
+    .resources__grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .resource-card {
+        width: 100%;
+        max-width: 460px;
+        height: 500px;
+    }
+}
