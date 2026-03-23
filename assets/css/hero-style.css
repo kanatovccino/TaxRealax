@@ -1,6 +1,6 @@
 /* --- СЕКЦИЯ HERO --- */
 .hero {
-    background-color: var(--color-bg); /* Тот же кремовый фон */
+    background-color: var(--color-cream); /* Тот же кремовый фон */
     padding: 60px 0 80px;
 }
 
@@ -70,6 +70,7 @@
     font-size: 14px;
     font-family: Inter;
     font-weight: 500;
+    line-height: 16px;
     line-height: 16px;
     cursor: pointer;
     text-decoration: none;

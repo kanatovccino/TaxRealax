@@ -11,12 +11,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
-    --color-bg: #FEF4CC; /* Тот самый кремовый из doola */
+    --color-cream: #FEF4CC; /* Тот самый кремовый из doola */
     --color-dark: #000;
     --font-main: 'Inter', -apple-system, sans-serif;
+    /* --color-ytext: #957800; */
 }
 
 body {
@@ -31,7 +34,7 @@ body {
 }
 
 .header {
-    background-color: var(--color-bg);
+    background-color: var(--color-cream);
     position: sticky;
     top: 0;
     padding-top: 30px;
@@ -41,8 +44,8 @@ body {
 
 /* Новый класс, который будет вешаться через JS при скролле */
 .header.is-scrolled {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    background-color: var(--color-bg);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    background-color: var(--color-cream);
     padding-top: 0px;
     transition: 300ms;
 }
@@ -160,15 +163,41 @@ body {
 }
 
 .dropdown-item:hover {
-  background: #fcfcfc;
-  color: #be6f1a;
-  border-left: 4px solid #FA9022;
+    background: #fcfcfc;
+    color: #be6f1a;
+    border-left: 4px solid #FA9022;
 }
 
+/* ICONS ============================================================== */
 .icon {
-  margin-right: 12px;
-  font-size: 1.2em;
+    position: relative;
+    margin-right: 12px;
+    height: 24px;
 }
+.lil-icon {
+    width: 18px;
+    height: 16px;
+    margin-right: 0px;
+}
+.lucide-rocket {
+    top: 2px;
+}
+.lucide-landmark {
+    top: -1.5px;
+}
+.lucide-chart-pie {
+    top: 2.4px;
+}
+.lucide-bot { 
+    top: 1.6px;
+}
+.lucide-chart-area {
+    top: 1.2px;
+}
+.lucide-percent {
+    top: 2px;
+}
+
 
 /* Правый блок (Questions + Button) */
 .header__right {

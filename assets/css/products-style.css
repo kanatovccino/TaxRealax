@@ -4,39 +4,11 @@
     background-color: #fff;
 }
 
-/* Заголовки */
-.products__header {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 60px;
-}
-
-.products__subtitle {
-    color: #A07D23;
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 16px;
-}
-
-.products__title {
-    font-size: 40px;
-    font-weight: 800;
-    color: var(--color-dark);
-    margin-bottom: 16px;
-    letter-spacing: -1px;
-}
-
-.products__description {
-    font-size: 18px;
-    color: #666;
-}
-
 /* Табы и кнопки */
 .products__nav-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #EAEAEA;
     margin-bottom: 40px;
     padding-bottom: 10px;
 }
@@ -44,7 +16,8 @@
 .products__tabs {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 16px;
+    border-bottom: 1px solid #EAEAEA;
 }
 
 .products__tab {
@@ -52,7 +25,7 @@
     font-weight: 500;
     color: #666;
     cursor: pointer;
-    padding-bottom: 12px;
+    padding: 14px 16px;
     position: relative;
     transition: color 0.2s ease;
 }
@@ -70,7 +43,7 @@
 .products__tab.is-active::after {
     content: '';
     position: absolute;
-    bottom: -11px; /* Спускаем на уровень бордера родителя */
+    bottom: 0px; /* Спускаем на уровень бордера родителя */
     left: 0;
     width: 100%;
     height: 2px;
@@ -82,13 +55,20 @@
     gap: 16px;
 }
 
+.btn--black {
+    width: 210px;
+    height: 48px;
+}
+.btn__arrow {
+    margin-left: 4px;
+}
 .btn--gray {
-    background-color: #F5F5F5;
+    background-color: #eeeeee;
     color: var(--color-dark);
-    padding: 12px 24px;
+    padding: 16px 24px;
     border-radius: 50px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     transition: background-color 0.2s;
 }
@@ -115,7 +95,7 @@
 /* --- GRID ДЛЯ КАРТОЧЕК --- */
 .products__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 476px 357px 357px;
     gap: 24px;
 }
 
@@ -127,14 +107,14 @@
 
 /* Стили карточек */
 .card {
-    border-radius: 20px;
+    border-radius: 40px;
     padding: 32px;
     display: flex;
     flex-direction: column;
 }
 
 .card--yellow {
-    background-color: #FFF9E3; /* Фирменный кремовый */
+    background-color: var(--color-cream); /* Фирменный кремовый */
 }
 
 .card--white-bordered {
@@ -153,26 +133,25 @@
 
 /* Текст внутри карточек */
 .card__tag {
-    font-size: 12px;
-    font-weight: 700;
-    color: #A07D23;
-    text-transform: uppercase;
-    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .card__title {
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--color-dark);
-    margin-bottom: 16px;
-    line-height: 1.2;
+    margin: 16px 0px;
+    line-height: 32px;
 }
 
 .card__text {
-    font-size: 15px;
-    color: #444;
-    line-height: 1.5;
-    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-dark);
+    line-height: 24px;
+    margin-bottom: 56px;
 }
 
 /* Заглушки для картинок */
@@ -285,8 +264,16 @@
 
 
 /* Модификатор сетки на 2 колонки */
-.products__grid--2-col {
-    grid-template-columns: repeat(2, 1fr);
+.products__grid--bookkeeping {
+    grid-template-columns: 560px 630px;
+}
+
+.products__grid--taxes {
+    grid-template-columns: 720px 487px;
+    gap: 16px;
+}
+.products__grid--analytics {
+    grid-template-columns: 600px 600px;
 }
 
 /* Белая карточка с синей рамкой */
@@ -310,6 +297,9 @@
 
 /* --- ЦВЕТА ТЕГОВ --- */
 /* Перебиваем базовый желтый цвет тегов в зависимости от фона карточки */
+.card--yellow .card__tag {
+    color: #957800;
+}
 .card--blue .card__tag,
 .card--white-blue-border .card__tag {
     color: #4F80FF; /* Синий тег */
