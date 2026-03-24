@@ -41,3 +41,22 @@ tabs.forEach(tab => {
         document.getElementById(targetPanelId).classList.add('is-active');
     });
 });
+
+
+//  FOUNDERS ======================================================================
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.founder-card');
+
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            // Если кликнули на уже активную - ничего не делаем
+            if (card.classList.contains('is-active')) return;
+
+            // Убираем класс у всех
+            cards.forEach(c => c.classList.remove('is-active'));
+            
+            // Добавляем тому, на который кликнули
+            card.classList.add('is-active');
+        });
+    });
+});
