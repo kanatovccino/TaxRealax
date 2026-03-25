@@ -1,0 +1,77 @@
+/* --- СЕКЦИЯ CTA BANNER --- */
+.cta-banner {
+    /* padding: 80px 0; */
+}
+
+.cta-banner__wrapper {
+    width: 100%;
+    height: 485px;
+    background-color: #FDE887; /* Фирменный желтый doola */
+    border-radius: 24px; /* Скругление как на макете */
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+
+/* Блок текста (строго по твоим размерам) */
+.cta-banner__content {
+    width: 492px;
+    height: 216px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cta-banner__title {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    color: #000;
+    margin: 0 0 16px 0;
+    letter-spacing: 1px; 
+}
+
+.cta-banner__text {
+    font-size: 16px;
+    margin: 0 0 40px 0;
+}
+
+.cta-banner__actions {
+    display: flex;
+    gap: 16px;
+}
+
+/* Блок картинки */
+.cta-banner__image-wrap {
+    flex: 1; /* Занимает всё оставшееся пространство справа */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-banner__image {
+    max-width: 100%;
+    max-height: 120%; /* Иногда такие картинки чуть вылезают за края, поправишь по месту */
+    object-fit: contain;
+}
+
+/* Адаптив, чтобы на мобилках не сломалось */
+@media (max-width: 991px) {
+    .cta-banner__wrapper {
+        flex-direction: column;
+        height: auto;
+        padding: 40px;
+        text-align: center;
+    }
+    .cta-banner__content {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    .cta-banner__image-wrap {
+        margin-top: 40px;
+    }
+}

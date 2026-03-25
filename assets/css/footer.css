@@ -1,0 +1,164 @@
+/* --- FOOTER --- */
+.footer {
+    padding: 80px 0 40px;
+    background-color: #fff;
+    border-top: 1px solid #EAEAEA;
+}
+
+/* Верхний блок */
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 80px; /* Отступ до нижнего бордера */
+}
+
+.footer__brand {
+    max-width: 480px;
+}
+
+.footer__logo {
+    display: block;
+    width: 140px; /* Примерная ширина логотипа */
+    margin-bottom: 24px;
+}
+
+.footer__desc {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Форма подписки */
+.footer__newsletter {
+    max-width: 400px;
+    width: 100%;
+}
+
+.footer__newsletter-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+/* Обертка-капсула для инпута и кнопки */
+.footer__form {
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+    border-radius: 50px;
+    padding: 4px 4px 4px 24px; /* Справа отступ меньше, там кнопка */
+    margin-bottom: 12px;
+}
+
+.footer__input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+    padding-right: 16px;
+}
+
+.footer__input::placeholder {
+    color: #999;
+}
+
+/* Слегка подгоняем кнопку под размер формы */
+.footer__submit {
+    padding: 12px 24px;
+    white-space: nowrap;
+}
+
+.footer__consent {
+    font-size: 13px;
+    color: #666;
+}
+
+.footer__consent a {
+    color: #4F80FF;
+    text-decoration: none;
+}
+
+.footer__consent a:hover {
+    text-decoration: underline;
+}
+
+/* Нижний блок */
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    border-top: 1px solid #EAEAEA;
+    flex-wrap: wrap; /* Для адаптива */
+    gap: 24px;
+}
+
+.footer__yc-logo {
+    display: block;
+    width: 180px;
+}
+
+.footer__legal {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+
+.footer__legal a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer__legal a:hover {
+    color: #666;
+}
+
+/* Соцсети */
+.footer__socials {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    transition: opacity 0.2s;
+}
+
+.footer__social-link:hover {
+    opacity: 0.7;
+}
+
+/* Заглушки для SVG по твоим размерам */
+.footer__social-link svg {
+    width: 40px;
+    height: 40px;
+    background-color: #EAEAEA; /* Уберешь фон, когда вставишь иконки */
+    border-radius: 8px; /* Просто для красоты заглушки */
+}
+
+/* Адаптив */
+@media (max-width: 991px) {
+    .footer__top {
+        flex-direction: column;
+    }
+    .footer__bottom {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer__legal {
+        flex-direction: column;
+        gap: 12px;
+    }
+}

@@ -60,3 +60,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+//  FAQ ======================================================================
+document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq__item');
+
+    faqItems.forEach(item => {
+        const questionBtn = item.querySelector('.faq__question');
+
+        questionBtn.addEventListener('click', () => {
+            // Проверяем, открыт ли тот, по которому кликнули
+            const isActive = item.classList.contains('is-active');
+
+            // Сначала убираем класс is-active у ВСЕХ элементов
+            faqItems.forEach(faq => faq.classList.remove('is-active'));
+
+            // Если он был закрыт, то открываем (добавляем класс)
+            // Если был открыт, то он просто закроется (так как мы уже убрали классы у всех)
+            if (!isActive) {
+                item.classList.add('is-active');
+            }
+        });
+    });
+});

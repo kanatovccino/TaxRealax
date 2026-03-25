@@ -1,11 +1,8 @@
 
-/* size - line-height - weight - color
- 
-section__header (display: flex; Вертикальное расположение, justyfy-content)
-    section__subtitle        | 18 - 23 - 500 - #957800
-    section__title           | 34 - 44 - 700 - #000
-    section__description     | 16 - 24 - 400 - #545454
-*/
+section {
+    margin-bottom: 200px;
+}
+
 .section__header {
     display: flex;
     flex-direction: column;
