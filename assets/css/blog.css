@@ -1,0 +1,351 @@
+.mini__title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.hero-news .container {
+    padding-top: 100px;
+}
+
+
+
+
+/* Главная обертка (Красная линия) */
+.hero-news__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px; /* Красная линия */
+}
+
+/* Колонки со списками (Фиолетовые линии) */
+.hero-news__left, 
+.hero-news__right {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px; /* Фиолетовые линии */
+    align-content: start;
+}
+
+/* Внутренние списки мелких карточек (Фиолетовые линии между ними) */
+.hero-news__left-list,
+.hero-news__right-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px; /* Фиолетовые линии между мелкими постами */
+}
+
+/* КАРТОЧКИ */
+
+/* Большая карточка (Левая верхняя) */
+.news-card--primary .news-card__img{
+    width: 572px;
+    height: 373px;
+    border-radius: 28px;
+    background-image: url('../images/picture/pexels-seanrvalentine-3230122.jpg');
+    background-position: 50% -20px;
+    margin-bottom: 24px;
+}
+
+.news-card--primary .news-card__content {
+}
+
+/* Мелкие карточки (Розовая линия) */
+.news-card--secondary {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* 200px под синий блок */
+    gap: 40px; /* Розовая линия */
+    align-items: start;
+}
+
+.news-card--secondary .news-card__img {
+    width: 200px;
+    min-height: 200px;
+    background-color: #666; /* Средне-серый вместо маленьких синих */
+}
+
+.news-card--secondary .news-card__content {
+    min-height: 160px; /* Примерная высота серого блока текста */
+    background-color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Обновляем твой блок, убирая серый фон и добавляя радиус */
+.news-card--secondary .news-card__img {
+    width: 200px;
+    height: 200px; /* Фиксируем высоту, чтобы была квадратная */
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: transparent; /* Убираем серый */
+}
+
+.news-card--secondary .news-card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-card--secondary .news-card__content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    background-color: transparent; /* Убираем серый */
+    min-height: 200px; /* Выравниваем по высоте картинки */
+}
+
+.blog-tag {
+    display: inline-block;
+    width: auto;
+    background-color: #fcf1ce; /* Подогнал цвет фона под скрин */
+    color: #333;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.news-card__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-top: 16px;
+    margin-bottom: 0;
+    color: #000;
+}
+
+.news-card__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 16px;
+    margin-bottom: 0;
+    color: #545454;
+}
+
+.news-card__meta {
+    margin-top: 24px;
+    font-size: 14px;
+    color: #888; /* Цвет текста даты и времени */
+}
+
+.news-card__divider {
+    margin: 0 4px;
+    color: #ccc; /* Цвет разделителя */
+}
+
+
+/* Стили контента */
+.news-card__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-top: 12px;
+    color: #000;
+}
+
+.news-card__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #545454;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+/* Мета-данные (Автор и Дата) */
+.news-card__meta {
+    margin-top: auto; /* Прижимает автора и дату к низу контентного блока */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.news-card__author {
+    color: #000;
+}
+
+.news-card__date {
+    color: #888;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Жёлтый блок CTA */
+.BIG-banner {
+    width: 572px;
+    height: 400px;
+    background-color: #FDE999;
+    /* Рисуем сетку тонкими линиями */
+    background-image: 
+        linear-gradient(#F3E3A3 1px, transparent 1px),
+        linear-gradient(90deg, #F3E3A3 1px, transparent 1px);
+    background-size: 40px 40px; /* Размер клетки */
+    
+    padding: 50px 60px;
+    border-radius: 28px; /* Скругление как на макете */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.BIG-banner__title {
+    /* Твой класс section__title уже работает, добавляем только отступ */
+    margin-bottom: 24px;
+    max-width: 450px; /* Чтобы текст красиво переносился */
+}
+
+.BIG-banner__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #111;
+    margin-bottom: 32px;
+    max-width: 400px;
+}
+
+.BIG-banner__action {
+    display: flex;
+    justify-content: center;
+}
+
+/* На случай, если в твоем btn--black нужно подправить отступы именно для этого блока */
+.BIG-banner .btn--black {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+
+
+/* =================================================================================================== */
+/* =================================================================================================== */
+/* =================================================================================================== */
+/* =================================================================================================== */
+
+.blogs__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; /* Настрой под свой дизайн */
+    margin-bottom: 40px;
+}
+
+.blogs__action {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Класс для скрытия */
+.is-hidden {
+    display: none;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Отступ между картинкой и текстом */
+    width: 386px; /* Фиксируем ширину всей карточки по картинке */
+}
+
+/* Обёртка для картинки */
+.blog-card__image-wrapper {
+    position: relative;
+    width: 386px;
+    height: 250px;
+    border-radius: 28px; /* На глаз скруглил, поправь если нужно */
+    overflow: hidden;
+    background-color: #f5f5f5; /* Заглушка, пока нет картинки */
+}
+
+.blog-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Чтобы картинка не плющилась */
+}
+
+/* Бейдж категории (если нужен) */
+.blog-card__badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 14px;
+    /* Тут добавишь фон и отступы бейджа, если он верстается текстом */
+}
+
+/* Контентная часть */
+.blog-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Расстояние между заголовком, текстом и датой */
+}
+
+.blog-card__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #111;
+    margin: 0;
+}
+
+.blog-card__excerpt {
+    font-size: 14px;
+    color: #666; /* Сделал чуть серее, чтобы не сливалось с заголовком */
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Блок с автором и датой */
+.blog-card__meta {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.blog-card__author {
+    font-weight: 600;
+    color: #000;
+}
+
+.blog-card__divider {
+    color: #ccc; /* Серая палочка разделителя */
+}
+
+.blog-card__date {
+    color: #888;
+}
+
+/* Специальное локальное исправление только для blog.html */
+/* Без этого кода именно в blog.html почему-то header дёргается... */
+body.page-blog .header {
+    padding-top: 6px;
+}
+
+body.page-blog .header.is-scrolled {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    padding-top: 6px;
+}
+
