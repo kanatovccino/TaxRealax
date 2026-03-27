@@ -1,0 +1,276 @@
+/* SECTION-ABOUT-HERO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SECTION-ABOUT-HERO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.aboutHero__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.aboutHero__title {
+  font-size: 96px;
+  line-height: 112px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.aboutHero__image-wrapper {
+  width: 100%;
+}
+
+.aboutHero__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 40px; /* Судя по скриншоту, углы сильно скруглены */
+  object-fit: cover;
+}
+
+.aboutHero__logos-list {
+  display: flex;
+  gap: 30px; /* Точно по ТЗ между всеми логотипами */
+  justify-content: center;
+  flex-wrap: wrap; /* На случай, если логотипов будет больше и они не поместятся в одну строку */
+}
+
+
+
+
+
+/* Не забывай про адаптив, на мобилках 96px превратится в тыкву */
+@media (max-width: 768px) {
+  .aboutHero__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+
+
+
+
+.about .cta-banner {
+    margin-bottom: 80px;
+}
+.about .cta-banner__main {
+    background-color: #D4E2FC;
+}
+.about .cta-banner__title {
+    font-weight: 700;
+}
+
+/* SECTION-STARTED ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SECTION-STARTED ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.started__main {
+  display: flex;
+  flex-direction: column;
+  gap: 80px; /* Отступ между верхним и нижним блоком. Поправь, если по макету другой */
+}
+
+/* Верхняя секция */
+.started__top {
+  display: flex;
+  gap: 80px; /* Твой gap 80px между блоками */
+}
+
+.started__info {
+  flex: 1;
+  gap: 40px;
+  display: flex;
+  align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+  /* Если в готовых классах нет margin-bottom, добавь сюда gap: 24px; */
+}
+
+.started__mission {
+  flex: 1;
+  gap: 40px;
+  background-color: #FEF4CC; /* Оранжево-желтый фон */
+  padding: 80px; /* Твой padding */
+  border-radius: 32px; /* Примерное скругление с макета */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Нижняя секция */
+.started__bottom {
+  display: flex;
+  gap: 24px; /* Твой gap 24px */
+}
+
+.started__card {
+  flex-shrink: 0; /* Чтобы не сжимались меньше заданного */
+  width: 288px;
+  height: 272px;
+  background-color: #F6F6F6; /* Светло-серый фон карточек */
+  border-radius: 32px;
+  padding: 40px; /* Внутренние отступы, настрой по сетке */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.started__main img{
+    width: 70px;
+    height: 70px;
+}
+
+
+/* SECTION-PEOPLE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SECTION-PEOPLE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.people {
+    padding: 80px 0;
+    background-color: #EEF3FE;
+}
+.people__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем контент, если нужно */
+  gap: 60px; /* Настрой общий отступ между хэдером, пустым блоком и гридом */
+}
+
+.section__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.people__group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 24px;
+  column-gap: 40px;
+  width: 100%;
+}
+
+.people__card {
+  width: 288px;
+  height: 396px;
+  background-color: #fff;
+  border-radius: 24px; /* Примерное скругление по макету */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 200ms;
+}
+.people__card:hover {
+    transform: translateY(-8px);
+}
+.people__card-img {
+  width: 288px;
+  height: 220px;
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #D4E2FC;
+  flex-shrink: 0;
+  transition: 200ms;
+}
+.people__card:hover .people__card-img{
+    /* background-position-x: 10%;
+    background-position-y: -10%; */
+}
+
+.people__card-text {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Раскидываем текст и иконки */
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.people__name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 4px 0;
+}
+
+.people__role {
+  font-size: 14px;
+  color: #666; /* Цвет мелкого текста */
+  margin: 0;
+}
+
+.people__socials {
+  display: flex;
+  gap: 16px;
+}
+
+.people__socials svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  /* На случай, если SVG будут без своих viewBox и размеров */
+}
+
+/* Адаптив для грида */
+@media (max-width: 1200px) {
+  .people__group {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .people__group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .people__group {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+
+
+
+/* SECTION-GET-IN-TOUCH ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SECTION-GET-IN-TOUCH ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.get-in-touch {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.get-in-touch__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px; /* Точно по ТЗ между всеми элементами */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.get-in-touch__text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000;
+    margin: 0;
+}
+
+.get-in-touch__text a {
+    color: #5865F2; /* Цвет ссылки из макета */
+    text-decoration: none;
+}
+
+.get-in-touch__text a:hover {
+    text-decoration: underline;
+}
+
+/* Кнопка (если нужно подправить стрелочку внутри) */
+.get-in-touch .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}

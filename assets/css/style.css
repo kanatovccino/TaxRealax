@@ -55,7 +55,7 @@ a {
 .btn--black {    
     display: flex;
     max-width: 240px;
-    padding: 16px 12px 16px 24px;
+    padding: 16px 16px 16px 24px;
     justify-content: center;
     align-items: center;
     gap: 8px;
@@ -70,29 +70,36 @@ a {
     cursor: pointer;
     text-decoration: none;
     transition: transform 0.2s ease;
-    white-space: nowrap;.
+    white-space: nowrap;
 }
 .btn--black:hover {
     transform: translateY(-2px);
 }
-.btn__arrow {
+/* .btn__arrow {
     margin-left: 8px;
     font-size: 20px;
     line-height: 1;
-}
+} */
 
 /* Белая кнопка */
 .btn--white {
-    display: inline-flex;
+    display: flex;
+    max-width: 150px;
+    padding: 16px 16px 16px 24px;
+    justify-content: center;
     align-items: center;
-    background-color: #ffffff;
-    color: var(--color-dark);
-    padding: 14px 28px;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: 600;
+    gap: 8px;
+    background-color: #fff;
+    border-radius: 24px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 16px;
+    cursor: pointer;
     text-decoration: none;
     transition: transform 0.2s ease;
+    white-space: nowrap;
 }
 .btn--white:hover {
     transform: translateY(-2px);
@@ -108,9 +115,22 @@ a {
     text-decoration: none;
     transition: background-color 0.2s;
 }
-
 .btn--gray:hover {
     background-color: #E0E0E0;
+}
+
+.btn--gray {
+    background-color: #fff;
+    color: var(--color-dark);
+    padding: 16px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+.btn--gray:hover {
+    background-color: #eee;
 }
 
 
@@ -166,12 +186,25 @@ h2.section__title {
     margin: 16px 0;
     width: 100%;
 }
+.section__title {
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #000;
+    margin: 16px 0;
+    width: 100%;
+}
 .section__description {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: #545454;
     width: 100%;
+}
+.section__mini-text {
+    /* text-align: left; */
+    margin: 8px 0;
 }
 
 /* HEADER ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -458,9 +491,9 @@ h2.section__title {
     width: 210px;
     height: 48px;
 }
-.products__actions .btn__arrow {
+/* .products__actions .btn__arrow {
     margin-left: 4px;
-}
+} */
 
 /* Панели контента ================================================== */
 @keyframes fadeIn {
@@ -768,6 +801,7 @@ h2.section__title {
 
 /* SECTION-OVERVIEW ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* SECTION-OVERVIEW ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 .overview__grid {
     display: flex;
     justify-content: center;
@@ -878,10 +912,7 @@ h2.section__title {
     margin-bottom: 26px;
 }
 
-.perks .btn--black {
-    display: inline-block;
-    padding: 12px 6px 12px 6px;
-}
+
 
 /* Сетка карточек справа */
 .perks__grid {

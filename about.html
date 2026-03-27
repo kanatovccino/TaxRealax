@@ -7,18 +7,374 @@
     
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/about.css">
 </head>
-<body>
+<body class="about">
 
-    <header class="header">
-        </header>
+    <header class="header" style="background-color: #fff;">
+        <div class="container">
+            <div class="header__main">
+                <a href="index.html" class="header__logo"><img src="./assets/images/logo/taxrelax logo.png" alt=""></a>
+
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Products<img src="assets/images/logo/angle-down.svg" class="arrow" alt="arrow"></a>
+                            <div class="dropdown-menu">
+                                <a href="products.html" class="dropdown-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon lucide lucide-rocket-icon lucide-rocket"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/></svg> Formation</a>
+                                <a href="#" class="dropdown-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon lucide lucide-circle-user-round-icon lucide-circle-user-round"><path d="M18 20a6 6 0 0 0-12 0"/><circle cx="12" cy="10" r="4"/><circle cx="12" cy="12" r="10"/></svg> AI Junior Accounting</a>
+                                <a href="#" class="dropdown-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon lucide lucide-landmark-icon lucide-landmark"><path d="M10 18v-7"/><path d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M3 22h18"/><path d="M6 18v-7"/></svg> AI KYC & AML</a>
+                            </div>
+                        </li>
+                        <li class="nav__item"><a href="#" class="nav__link">Partner with Us</a></li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Resources<img src="assets/images/logo/angle-down.svg" class="arrow" alt="arrow"></a>
+                            <div class="dropdown-menu">
+                                <a href="products.html" class="dropdown-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon lucide lucide-message-circle-icon lucide-message-circle"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></svg> Blog</a>
+                                <a href="#" class="dropdown-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon lucide lucide-blocks-icon lucide-blocks"><path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"/><rect x="14" y="2" width="8" height="8" rx="1"/></svg> Integration</a>
+                                <a href="about.html" class="dropdown-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon lucide lucide-users-round-icon lucide-users-round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg> About Us</a>
+                            </div>
+                        </li>
+                        <li class="nav__item"><a href="pricing.html" class="nav__link">Pricing</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__btns">
+                    <span class="header__btns--question">Any Questions?</span>
+                    <a href="contact.html" class=" header__btns--btn btn btn--primary">Book a Free Consultation</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <main class="main">
-        
+        <section class="aboutHero">
+            <div class="container">
+              <div class="aboutHero__main">
+
+                <img width="196" height="15" src="./assets/images/logo/Trustpilot.webp" alt="">
+            
+                <h1 class="aboutHero__title">Let’s TaxRelax it.</h1>
+            
+                <div class="aboutHero__image-wrapper">
+                  <img src="assets/images/picture/Frame-1000003376.webp" alt="Our Office" class="aboutHero__img">
+                </div>
+            
+                <div class="hero__logos" style="background-color: #F6F6F6;">
+                    <p class="hero__logos-title">They talk about us</p>
+                    <div class="aboutHero__logos-list">
+                        <a class="aboutHero__logos-item"><img width="auto" height="43" src="./assets/images/logo/BFM-p-500-1.png.webp" alt=""></a>
+                        <a class="aboutHero__logos-item"><img width="auto" height="43" src="./assets/images/logo/card-rates-p-500-1.png.webp" alt=""></a>
+                        <a class="aboutHero__logos-item"><img width="auto" height="43" src="./assets/images/logo/on-deck-p-500-1.png.webp" alt=""></a>
+                        <a class="aboutHero__logos-item"><img width="auto" height="43" src="./assets/images/logo/Techcrunch-p-500-1.png.webp" alt=""></a>
+                        <a class="aboutHero__logos-item"><img width="auto" height="43" src="./assets/images/logo/yahoo-finance-p-500-1.png.webp" alt=""></a>
+                        <a class="aboutHero__logos-item"><img width="auto" height="43" src="./assets/images/logo/international-business-times-p-500-1.png.webp" alt=""></a>
+                    </div>
+                </div>
+
+              </div>
+            </div>
+        </section>
+        <section class="perks" style="background-color: #EEF3FE;">
+            <div class="container">
+                <div class="perks__main">
+
+                    <div class="section__header" style="margin: 0;">
+                        <p class="section__title">Listen to TaxRelax story on NYSE Floor Talk</p>
+                        <p class="section__mini-text">We don’t just help founders form a company and give them a checklist of items to do. Instead, our Business-in-a-Box™ solution allows you as a founder to do what you do best to grow your company.</p>
+                        <p class="section__mini-text">As founders ourselves, we know how exciting and daunting this journey can be. Which is why we will be here with you every step of the way.</p>
+                        <p class="section__mini-text">Let’s take your dream idea, and turn it into your dream business with TaxRelax.</p>
+                    </div>
+                
+                    <div class="perks__video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/cA5O-LjhfHg?si=TgM02l7iFcI9_Kfu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="started">
+            <div class="container">
+
+                <div class="started__main">
+            
+                    <div class="started__top">
+                        <div class="started__info">
+                            <span class="section__subtitle" style="color: #276ef1;">How it started</span>
+                            <h2 class="section__title">Talent is everywhere.<br> But opportunity is not.</h2>
+                            <div>
+                                <p class="section__mini-text">doola is on a mission to help 1B people turn their dream idea into their dream US business and democratize access to the US financial ecosystem.</p>
+                                <p class="section__mini-text">With our Business-in-a-Box™ solution, we can single-handedly increase entrepreneurship globally by making it click button easy to start a US business, from anywhere in the world.</p>
+                            </div>
+                        </div>    
+                        <div class="started__mission">
+                            <span class="section__subtitle">Our mission</span>
+                            <h2 class="section__title">Help 1B people turn their dream idea into their dream business</h2>
+                            <img src="assets/images/logo/3d-rocket.webp" alt="as" class="started__mission-icon">
+                        </div>
+                    </div>
+                
+                    <div class="started__bottom">
+                        <div class="started__card">
+                            <img src="assets/images/logo/3d-dipressive-girl.webp" alt="">
+                            <p class="section__title">13k+</p>
+                            <p class="section__mini-text">Happy customers</p>
+                        </div>
+                        <div class="started__card">
+                            <img src="assets/images/logo/3d-astra.png" alt="">
+                            <p class="section__title">2,000+</p>
+                            <p class="section__mini-text">5 star reviews</p>
+                        </div>
+                        <div class="started__card">
+                            <img src="assets/images/logo/3d-mongolia.webp" alt="">
+                            <p class="section__title">175+</p>
+                            <p class="section__mini-text">Countries</p>
+                        </div>
+                        <div class="started__card">
+                            <img src="assets/images/logo/3d-redflag.webp" alt="">
+                            <p class="section__title">6</p>
+                            <p class="section__mini-text">Continents</p>
+                        </div>
+                    </div>
+              
+                </div>
+
+            </div>
+        </section>
+        <section class="people">
+            <div class="container">
+
+                <div class="people__main">
+
+                    <div class="section__header">
+                        <h2 class="section__title">We are backed by the best</h2>
+                        <a href="#" class="section__subtitle">Want to invest? Get in touch &gt;</a>
+                    </div>
+
+                    <div class="hero__logos">
+                        <p class="hero__logos-title">Backed By The Best</p>
+                        <div class="hero__logos-list">
+                            <a class="hero__logos-item"><img width="149" height="30" src="./assets/images/logo/y-combinator-color.svg" alt=""></a>
+                            <a class="hero__logos-item"><img width="103" height="30" src="./assets/images/logo/hubspot-color.svg" alt=""></a>
+                            <a class="hero__logos-item"><img width="84" height="30" src="./assets/images/logo/nexus-color.svg" alt=""></a>
+                            <a class="hero__logos-item"><img src="./assets/images/logo/hustle-fund-color.svg" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="people__group">
+
+                        <div class="people__card">
+                            <div class="people__card-img" style="background-image: url('assets/images/picture/path-to-image.jpg.png');"></div>
+                            <div class="people__card-text">
+                                <div class="people__info">
+                                    <h3 class="people__name">Jishnu Bhattacharjee</h3>
+                                    <p class="people__role">MD, Nexus Venture Partners</p>
+                                </div>
+                                <div class="people__socials">
+                                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path></svg></a>
+                                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path></svg></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="people__card">
+                            <div class="people__card-img" style="background-image: url('assets/images/picture/path-to-image.jpg.png');"></div>
+                            <div class="people__card-text">
+                                <div class="people__info">
+                                    <h3 class="people__name">Jishnu Bhattacharjee</h3>
+                                    <p class="people__role">MD, Nexus Venture Partners</p>
+                                </div>
+                                <div class="people__socials">
+                                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path></svg></a>
+                                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path></svg></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="people__card">
+                            <div class="people__card-img" style="background-image: url('assets/images/picture/path-to-image.jpg.png');"></div>
+                            <div class="people__card-text">
+                                <div class="people__info">
+                                    <h3 class="people__name">Jishnu Bhattacharjee</h3>
+                                    <p class="people__role">MD, Nexus Venture Partners</p>
+                                </div>
+                                <div class="people__socials">
+                                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path></svg></a>
+                                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path></svg></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="people__card">
+                            <div class="people__card-img" style="background-image: url('assets/images/picture/path-to-image.jpg.png');"></div>
+                            <div class="people__card-text">
+                                <div class="people__info">
+                                    <h3 class="people__name">Jishnu Bhattacharjee</h3>
+                                    <p class="people__role">MD, Nexus Venture Partners</p>
+                                </div>
+                                <div class="people__socials">
+                                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path></svg></a>
+                                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path></svg></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="people__card">
+                            <div class="people__card-img" style="background-image: url('assets/images/picture/path-to-image.jpg.png');"></div>
+                            <div class="people__card-text">
+                                <div class="people__info">
+                                    <h3 class="people__name">Jishnu Bhattacharjee</h3>
+                                    <p class="people__role">MD, Nexus Venture Partners</p>
+                                </div>
+                                <div class="people__socials">
+                                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path></svg></a>
+                                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path></svg></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="people__card">
+                            <div class="people__card-img" style="background-image: url('assets/images/picture/path-to-image.jpg.png');"></div>
+                            <div class="people__card-text">
+                                <div class="people__info">
+                                    <h3 class="people__name">Jishnu Bhattacharjee</h3>
+                                    <p class="people__role">MD, Nexus Venture Partners</p>
+                                </div>
+                                <div class="people__socials">
+                                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path></svg></a>
+                                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path></svg></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="people__card">
+                            <div class="people__card-img" style="background-image: url('assets/images/picture/path-to-image.jpg.png');"></div>
+                            <div class="people__card-text">
+                                <div class="people__info">
+                                    <h3 class="people__name">Jishnu Bhattacharjee</h3>
+                                    <p class="people__role">MD, Nexus Venture Partners</p>
+                                </div>
+                                <div class="people__socials">
+                                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path></svg></a>
+                                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path></svg></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="people__card">
+                            <div class="people__card-img" style="background-image: url('assets/images/picture/path-to-image.jpg.png');"></div>
+                            <div class="people__card-text">
+                                <div class="people__info">
+                                    <h3 class="people__name">Jishnu Bhattacharjee</h3>
+                                    <p class="people__role">MD, Nexus Venture Partners</p>
+                                </div>
+                                <div class="people__socials">
+                                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path></svg></a>
+                                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path></svg></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="cta-banner">
+            <div class="container">
+
+                <div class="cta-banner__main">
+
+                    <div class="cta-banner__content">
+                        <h3 class="cta-banner__title">Excited to join our team?</h3>
+                        <p class="cta-banner__text">We invite you to join our team to help us build a Business-in-a-Box™. Let’s TaxRelax it.</p>
+                        <div class="cta-banner__actions">
+                            <a href="#" class="btn btn--black">See open roles<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2L8 6L4 10" stroke="white" stroke-width="2" stroke-linecap="round"/></svg></a>
+                        </div>
+                    </div>
+                
+                    <div class="cta-banner__image-wrap">
+                        <img src="assets/images/picture/fjeu3odf.webp" style="max-width: 108%;" alt="TaxRelax Box" class="about-cta cta-banner__image">
+                    </div>
+                
+                </div>
+
+            </div>
+        </section>
+        <section class="get-in-touch">
+            <div class="container">
+                <div class="get-in-touch__main">
+                    <h2 class="section__title">Get in touch</h2>
+                    <p class="get-in-touch__text">
+                        At TaxRelax, we value trust, teamwork, and bringing transparency to help organisations make better decisions. Please don’t hesitate to reach out directly at <a href="mailto:hello@taxrelax.com">hello@taxrelax.com</a>.
+                    </p>
+                    <a href="#" class="btn btn--black">
+                        Reach out
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2L8 6L4 10" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-        </footer>
+        <div class="container">
+
+            <div class="footer__top">
+
+                <div class="footer__brand">
+                    <img src="assets/images/logo/taxrelax logo.png" alt="TaxRelax logo" class="footer__logo">
+                    <p class="footer__desc">Unify your business back office with TaxRelax—an all-in-one platform that handles LLC Formation, Bookkeeping, Taxes, and E-commerce Analytics. No paperwork. No stress. Just pure growth.</p>
+                </div>
+
+                <div class="footer__newsletter">
+                    <h4 class="footer__newsletter-title">Join TaxRelax's monthly newsletter</h4>
+
+                    <form class="footer__form">
+                        <input type="email" placeholder="Enter your email" class="footer__input" required>
+                        <button type="submit" class="btn btn--black footer__submit">Subscribe<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2L8 6L4 10" stroke="white" stroke-width="2" stroke-linecap="round"/></svg></button>
+                    </form>
+
+                    <p class="footer__consent">By subscribing you agree with our <a href="#">Privacy Policy</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer__bottom">
+
+                <div class="footer__yc">
+                    <img src="assets/images/logo/y-combinator-color.svg" alt="Y Combinator" class="footer__yc-logo">
+                </div>
+
+                <div class="footer__legal">
+                    <span>© TaxRelax 2026</span>
+                    <a href="#">Terms of service</a>
+                    <a href="#">Privacy policy</a>
+                </div>
+
+                <div class="footer__socials">
+                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path></svg></a>
+                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30"><path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path></svg></a>
+                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path></svg></a>
+                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path></svg></a>
+                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path></svg></a>
+                    <a href="#" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path></svg></a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
 
     <script src="assets/js/main.js"></script>
 </body>

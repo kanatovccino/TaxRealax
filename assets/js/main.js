@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isTicking) {
             window.requestAnimationFrame(() => {
                 // Включаем тень, если прокрутили ниже 100px
-                if (window.scrollY > 200) {
+                if (window.scrollY > 220) {
                     header.classList.add('is-scrolled');
                 } 
                 // Выключаем тень, только если вернулись выше 80px
-                else if (window.scrollY < 120) {
+                else if (window.scrollY < 140) {
                     header.classList.remove('is-scrolled');
                 }
                 
@@ -83,3 +83,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+//  BLOGs ======================================================================
+const showMoreBtn = document.getElementById('show-more-btn');
+const moreBlogs = document.getElementById('more-blogs');
+
+if (showMoreBtn && moreBlogs) {
+    showMoreBtn.addEventListener('click', () => {
+        moreBlogs.classList.remove('is-hidden'); // Показываем блоки
+        showMoreBtn.style.display = 'none';      // Скрываем кнопку
+    });
+}
