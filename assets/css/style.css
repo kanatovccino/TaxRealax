@@ -21,6 +21,17 @@
     --color-yelloBlock:#FBDE66;
     --color-logo-orange: #F98B21;
     --font-main: 'Inter', -apple-system, sans-serif;
+    --yellow: #F5C842;
+    --yellow-bg: #FFFBE8;
+    --gray-line: #E0E0E0;
+    --gray-node: #D4D4D4;
+    --gray-card: #F4F4F4;
+    --text-dark: #111;
+    --text-mid: #555;
+    --text-light: #999;
+    --line-w: 2px;
+    --node-size: 28px;
+    --card-radius: 16px;
 }
 
 body {
@@ -117,20 +128,6 @@ a {
 }
 .btn--gray:hover {
     background-color: #E0E0E0;
-}
-
-.btn--gray {
-    background-color: #fff;
-    color: var(--color-dark);
-    padding: 16px 24px;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: background-color 0.2s;
-}
-.btn--gray:hover {
-    background-color: #eee;
 }
 
 

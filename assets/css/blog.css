@@ -340,11 +340,11 @@
 
 /* Специальное локальное исправление только для blog.html */
 /* Без этого кода именно в blog.html почему-то header дёргается... */
-body.page-blog .header {
+body.blog .header {
     padding-top: 6px;
 }
 
-body.page-blog .header.is-scrolled {
+body.blog .header.is-scrolled {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     padding-top: 6px;
 }

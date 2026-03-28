@@ -94,3 +94,52 @@ if (showMoreBtn && moreBlogs) {
         showMoreBtn.style.display = 'none';      // Скрываем кнопку
     });
 }
+
+// PROGRESS-LINE=================================================================
+(function () {
+    const steps = Array.from(document.querySelectorAll('.progressLine__step'));
+    const fill  = document.getElementById('progressFill');
+    const track = document.querySelector('.progressLine__track');
+ 
+    function getNodeCenter(step) {
+      const node = step.querySelector('.progressLine__node');
+      const trackTop = track.getBoundingClientRect().top + window.scrollY;
+      const nodeTop  = node.getBoundingClientRect().top  + window.scrollY;
+      const nodeCenter = nodeTop + node.offsetHeight / 2;
+      return nodeCenter - trackTop;
+    }
+ 
+    function update() {
+      const vh = window.innerHeight;
+      const trigger = vh * 0.55; // point in viewport that "activates" a step
+ 
+      let lastActiveIdx = -1;
+ 
+      steps.forEach((step, i) => {
+        const node = step.querySelector('.progressLine__node');
+        const rect = node.getBoundingClientRect();
+        const nodeCenter = rect.top + rect.height / 2;
+ 
+        if (nodeCenter <= trigger) {
+          step.classList.add('is-active');
+          lastActiveIdx = i;
+        } else {
+          step.classList.remove('is-active');
+        }
+      });
+ 
+      // Update fill height
+      if (lastActiveIdx >= 0) {
+        const targetStep = steps[lastActiveIdx];
+        const pct = getNodeCenter(targetStep);
+        const trackH = track.offsetHeight;
+        fill.style.height = Math.min(pct, trackH) + 'px';
+      } else {
+        fill.style.height = '0px';
+      }
+    }
+ 
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update, { passive: true });
+    update();
+  })();
