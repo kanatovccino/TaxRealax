@@ -143,3 +143,40 @@ if (showMoreBtn && moreBlogs) {
     window.addEventListener('resize', update, { passive: true });
     update();
   })();
+
+// CORP-TAB =================================================================
+document.addEventListener('DOMContentLoaded', () => {
+  const tabs = document.querySelectorAll('.corpTab__tab');
+  const contents = document.querySelectorAll('.corpTab__action');
+
+  console.log('Табы найдены:', tabs.length); // Дебаг
+  console.log('Контент найден:', contents.length); // Дебаг
+
+  if (tabs.length === 0) {
+    console.warn('⚠️ Табы с классом .corpTab__tab не найдены!');
+    return;
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = tab.getAttribute('data-tab');
+      console.log('Нажата табка, data-tab:', target); // Дебаг
+
+      const targetElement = document.getElementById(target);
+      if (!targetElement) {
+        console.warn(`⚠️ Элемент с id="${target}" не найден!`);
+        return;
+      }
+
+      // 1. Убираем активный класс у всех табов
+      tabs.forEach(t => t.classList.remove('is-active'));
+      // 2. Скрываем весь контент
+      contents.forEach(c => c.classList.remove('is-active'));
+
+      // 3. Добавляем активный класс текущему табу
+      tab.classList.add('is-active');
+      // 4. Показываем нужный блок
+      targetElement.classList.add('is-active');
+    });
+  });
+});
