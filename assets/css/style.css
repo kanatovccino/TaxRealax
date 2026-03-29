@@ -398,6 +398,8 @@ h2.section__title {
     width: 100%;
     max-width: 655px;
     height: 460px;
+    background-image: url('../images/picture/Gemini_Generated_Image_o06os8o06os8o06o.png');
+    background-position: 1% 77%;
     background-color: #FBDE66;
     border-radius: 40px;
 }

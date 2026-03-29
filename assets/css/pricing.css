@@ -1,0 +1,441 @@
+/* SECTION-PRICING-HERO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SECTION-PRICING-HERO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.pricing section {
+  margin: 200px 0;
+  /* background-color: #fff; */
+}
+.pricingHero_main h1 {
+    font-size: 4em;
+}
+.pricingHero__ticker-wrap {
+  display: inline-block;
+  overflow: hidden;
+  height: 1.2em; /* подогнать под font-size заголовка */
+  position: relative;
+  min-width: 400px;
+  vertical-align: middle;
+}
+
+.pricingHero__ticker {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  will-change: transform;
+}
+
+.pricingHero__tick-word {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.2em;
+  color: #F5C842;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.ptw-1 {
+    color: #F5C842;
+}
+.ptw-2 {
+    color: #3e7cda;
+}
+.ptw-3 {
+    color: #299638;
+}
+.ptw-4 {
+    color: #2e9ac5;
+}
+.ptw-5 {
+    color: #942773;
+}
+
+/* SECTION-PLANs ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SECTION-PLANs ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.plans__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  font-weight: 500;
+}
+
+/* Стили самой карточки */
+.plan-card {
+  width: 380px;
+  height: 614px;
+  padding: 32px;
+  border: 1.2px solid #1a1a1a;
+  border-radius: 32px;
+  background-color: #fff;
+  box-sizing: border-box;
+  position: relative;
+  transition: 200ms;
+}
+.pc1:hover, .pc2:hover {
+    transform: scale(1.02);
+}
+.popular-wrapper:hover {
+    transform: scale(1.02);
+}
+
+/* Внутренние блоки строго по твоим размерам */
+.plan-card__header {
+  height: 172px;
+  margin-bottom: 32px;
+}
+
+.plan-card__price {
+  height: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.plan-card__features {
+  height: 154px;
+  border-top: 1px solid #eaeaea; /* Линия разделителя из макета */
+  padding-top: 24px;
+}
+
+/* Обёртка для третьей карточки (двойная вложенность) */
+.popular-wrapper {
+  background-color: #ffe687; /* Желтый цвет из макета */
+  border-radius: 32px;
+  /* width: 400px; */
+  height: 660px;
+  padding: 40px 4px 4px 4px;
+  position: relative;
+  top: -20px;
+  display: flex;
+  flex-direction: column;
+  transition: 200ms;
+}
+
+.popular-badge {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+/* Желтый фон у самой карточки внутри обертки */
+.popular-wrapper .plan-card {
+  background-color: #fff8d6;
+  border-color: transparent; /* Убираем черную рамку, оставляем только желтую обертку */
+  height: 100%;
+  transition: 200ms;
+}
+
+/* Оформление контента (типографика и мелочи) */
+.plan-card__header .icon {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.plan-card__header h2 {
+  margin: 0 0 12px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.plan-card__header p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #4a4a4a;
+}
+
+.price-info .price {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.price-info .period {
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+.price-info .fees {
+  font-size: 13px;
+  color: #6a6a6a;
+  margin-top: 4px;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Тоггл в третьей карточке (с абсолютным позиционированием, чтобы не сбить mb: 80px у цены) */
+.toggle-annual {
+  position: absolute;
+  top: 310px; /* Подгони под макет */
+  left: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.toggle-annual .save {
+  color: #9a8020;
+  font-weight: 600;
+}
+
+/* Списки преимуществ */
+.plan-card__features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.plan-card__features li {
+  font-size: 14px;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 24px;
+}
+
+.plan-card__features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #b89000;
+  font-weight: bold;
+}
+
+.all-features {
+  color: #4285f4;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* SECTION-VIP-CLUB ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SECTION-VIP-CLUB ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.vip-club {
+  background-color: #FFF9D7; /* Цвет фона из макета */
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.vip-club__container {
+  display: flex;
+  align-items: center; /* Центрирование по вертикали */
+  gap: 80px;           /* Твой отступ */
+  width: 1224px;       /* 572 + 80 + 572 */
+  margin: 0 auto;
+}
+
+/* ЛЕВАЯ КОЛОНКА */
+.vip-club__image {
+  width: 572px;
+  height: 538px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.vip-club__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px; /* Скругление как на скрине */
+}
+
+/* ПРАВАЯ КОЛОНКА */
+.vip-club__content {
+  width: 572px;
+  height: 432px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Центрируем контент внутри блока по высоте */
+}
+
+.section__title {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.section__title .highlight {
+  color: #B69449; /* Твой золотой цвет */
+}
+
+.vip-club__description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4a4a4a;
+  margin-bottom: 32px;
+}
+
+/* СТАТИСТИКА ВНИЗУ */
+.vip-club__stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 600;
+  color: #B69449;
+  /* Для эффекта как на скрине можно добавить Italic */
+  font-style: italic;
+  font-family: serif; 
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+/* Твоя готовая кнопка */
+.btn--black {
+  align-self: flex-start; /* Чтобы не растягивалась во весь блок */
+}
+
+
+/* SECTION-COMPARION ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SECTION-COMPARION ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.table-sticky-header {
+  display: flex;
+  position: sticky;
+  top: 95px;
+  background-color: #fff;
+  z-index: 100;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Левая часть */
+.header-spacer {
+  width: 404px;
+  flex-shrink: 0; /* Чтобы не сжимался */
+}
+
+/* Правая часть с планами */
+.header-plans {
+  width: 820px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+/* ТИПОГРАФИКА */
+.plan-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.plan-price b {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.plan-price span {
+  font-size: 14px;
+  color: #666;
+  margin-left: 4px;
+}
+
+/* Если нужно чуть подправить кнопки в этом блоке */
+.plan-item .btn {
+  margin-top: 10px;
+  font-size: 14px;
+  /* твои стили для btn btn--black уже должны работать */
+}
+
+/* table ========================== */
+.simple-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+/* Липкая шапка */
+.simple-table thead th {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 20px 10px;
+  border-bottom: 2px solid #000;
+  z-index: 2;
+}
+
+/* Разделители категорий (серые плашки) */
+.simple-table .sep td {
+  background: #f4f4f4;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Обычные ячейки */
+.simple-table td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+/* Текст в левой колонке прижимаем к краю */
+.simple-table td:first-child {
+  text-align: left;
+  color: #555;
+}
+
+/* Цвета иконок */
+.ok { color: #28a745; font-weight: bold; }
+.no { color: #ccc; }
+
+/* Чтобы текст в шапке не слипался */
+.simple-table b { display: block; font-size: 18px; margin-top: 5px; }
+
+/* SECTION-INDUSTRY ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SECTION-INDUSTRY ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.industry__main .section__header {
+    margin-bottom: 16px;
+}
+.industry__main .btn--black {
+    margin: 0 auto;
+    padding: 16px 32px;
+    margin-bottom: 50px;
+}
+.industry__main img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}

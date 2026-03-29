@@ -1,0 +1,431 @@
+.contact__placeholder {
+    width: 100%;
+    max-width: 572px;
+    height: 535px;
+    /* background-image: url('../images/picture/yellow-guy.png'); */
+    background-size: 100%;
+    background-color: #FDF4CC;
+    border-radius: 40px;
+}
+
+.contact section {
+    margin-top: 80px;
+}
+.contact .perks {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+/* SECTION-WORKREs ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SECTION-WORKREs ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.workers {
+  padding: 80px 0;
+  overflow: hidden; /* Обрезаем края, чтобы карточки уходили за экран */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workers .section__header {
+  margin-bottom: 48px;
+}
+
+.workers .section__title {
+  margin: 0;
+}
+
+/* Контейнер для двух рядов */
+.workers__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100vw; /* Растягиваем на всю ширину окна */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Настройки рядов */
+.workers__row {
+  display: flex;
+  gap: 16px;
+  width: max-content; /* Чтобы карточки не сжимались, а выстраивались в длинную кишку */
+}
+
+/* Сдвигаем ряды для создания асимметричной сетки */
+.workers__row--top {
+  transform: translateX(-8%); 
+}
+
+.workers__row--bottom {
+  transform: translateX(-2%);
+}
+
+/* Сама карточка */
+.worker-card {
+  width: 230px;
+  height: 270px;
+  border-radius: 16px;
+  
+  /* Фоновая картинка */
+  background-color: #F7EDC6; /* Цвет-заглушка, пока нет картинок */
+  background-size: 160%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-image: url("../images/picture/path-to-image.jpg.png"); */
+  
+  /* Позиционирование текста внизу */
+  opacity: 0.95;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  box-sizing: border-box;
+  text-align: left;
+  
+  /* Та самая желтая внутренняя тень */
+  box-shadow: inset 0px -80px 50px -15px rgba(154, 123, 30, 0.85);
+}
+
+/* Тексты внутри карточки */
+.worker-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.worker-name {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.worker-company {
+  color: #F8D959; /* Золотистый цвет из макета */
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Кнопка внизу */
+.workers__footer {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+/* SECTION-FIT ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SECTION-FIT ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.partners-fit {
+  text-align: center;
+}
+
+.partners-fit__grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Gap между карточками */
+  margin-top: 48px;
+}
+
+.fit-card {
+  width: 358px;
+  height: 320px;
+  background: #F2F4F5; /* Легкий фон карточки */
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.fit-card__img {
+  width: 358px;
+  height: 126px;
+  background: #E5E8EB; /* Фон-заглушка для пустого img */
+}
+
+.fit-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fit-card__content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fit-card__text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+}
+
+.fit-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fit-card__list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Делаем SVG зеленым */
+.fit-card__list li svg {
+  color: #2D8A4E; 
+  flex-shrink: 0;
+}
+
+.partners-fit__footer {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+/* SECTION-ref-promo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SECTION-ref-promo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Переиспользуем SVG галочки через CSS-переменную для чистоты */
+.referral-promo {
+  background-color: #FFF9D7; /* Цвет фона из макета */
+  /* Padding от верха и низа 58px */
+  padding: 58px 0;
+}
+
+.referral-promo__container {
+  display: flex;
+  align-items: center; /* Центрирование по вертикали */
+  /* Gap 32px */
+  gap: 32px;
+  justify-content: center;
+}
+
+/* Левая часть (текст) */
+.referral-promo__content {
+  flex: 1; /* Занимает оставшееся место */
+  max-width: 500px; /* Чтобы текст не растягивался слишком сильно */
+  text-align: left;
+}
+
+/* Заголовок 36px */
+.referral-promo__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 24px 0;
+  color: #000;
+}
+
+/* Список */
+.referral-promo__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.referral-promo__list li {
+  display: flex;
+  align-items: flex-start; /* Выравнивание галочки по верху первой строки текста */
+  gap: 12px;
+}
+
+.referral-promo__list li p {
+  margin: 0;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 1.4;
+}
+.referral-promo__list li svg {
+    color: green;
+}
+
+
+/* Элемент для вставки галочки */
+.icon-check {
+  display: block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0; /* Чтобы не сжималась */
+  background-image: var(--svg-check);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 2px; /* Небольшой сдвиг вниз для выравнивания с текстом */
+}
+
+/* Правая часть (картинка) */
+.referral-promo__image {
+  /* Картинка в ширину 596 */
+  width: 596px;
+  flex-shrink: 0; /* Чтобы не сжималась */
+}
+
+.referral-promo__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+
+
+/* SECTION-LINE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SECTION-LINE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.contact .progressLine__card {
+    border-radius: 0 0 20px 20px;
+}
+.progressLine__card-wrapper img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/* SECTION-OFFERING ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SECTION-OFFERING ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.offering {
+  background-color: #fff;
+}
+
+/* Head */
+.offering__head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 56px;
+}
+
+.offering__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 16px;
+  line-height: 1.25;
+}
+
+.offering__subtitle {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Grid */
+.offering__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.offering__item {
+  padding: 0 40px;
+  position: relative;
+}
+
+/* Vertical dividers between items */
+.offering__item + .offering__item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #e5e7eb;
+}
+
+/* Первый item без левого паддинга */
+.offering__item:first-child {
+  padding-left: 0;
+}
+
+/* Последний item без правого паддинга */
+.offering__item:last-child {
+  padding-right: 0;
+}
+
+/* Badge / Pill */
+.offering__badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.offering__badge--formation {
+  background-color: #fef9c3;
+  color: #854d0e;
+}
+
+.offering__badge--taxes {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.offering__badge--bookkeeping {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+/* Item content */
+.offering__item-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+
+.offering__item-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .offering__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .offering__item {
+    padding: 0;
+  }
+
+  .offering__item + .offering__item::before {
+    display: none;
+  }
+
+  .offering__title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .offering {
+    padding: 56px 0;
+  }
+
+  .offering__head {
+    margin-bottom: 40px;
+  }
+
+  .offering__title {
+    font-size: 24px;
+  }
+}
